@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Le // DIGITAL SCRAPBOOK</title>
+    <!-- Google Fonts: Sora (Display) & Plus Jakarta Sans (Body) & Share Tech Mono (Labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tactile Paper Texture Overlay -->
+    <div class="paper-overlay"></div>
+
+    <!-- Outer Scrapbook Wrapper -->
+    <div class="scrapbook-container">
+
+        <!-- Persistent Header Panel -->
+        <header class="scrapbook-header">
+            <div class="header-logo-badge">
+                <a href="#" class="logo-text">Henry Le</a>
+            </div>
+            <nav class="header-nav">
+                <button class="nav-tag active" data-target="home-manifest">STUFF</button>
+                <button class="nav-tag" data-target="chronicles-session">SESSIONS</button>
+                <button class="nav-tag" data-target="chaos-manifesto">PROJECTS</button>
+                <button class="nav-tag" data-target="commission-contact">GET_IN_TOUCH</button>
+            </nav>
+            <button class="hire-tag"
+                onclick="document.querySelector('[data-target=commission-contact]').click()">HIRE_ME</button>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="scrapbook-content">
+
+            <!-- SCREEN 1: HOME (STUFF / ENTRY MANIFEST) -->
+            <section id="home-manifest" class="scrapbook-section active">
+                <div class="hero-layout">
+                    <div class="hero-left">
+                        <span class="ticker-label taped-label-red">COMPUTER SCIENCE STUDENT & AI EXPLORER</span>
+                        <h1 class="hero-headline">
+                            Putting a <span class="marker-underline">human touch</span> back into digital design.
+                        </h1>
+                        <p class="hero-desc">
+                            Welcome to my creative scrapbook of
+                            ideas, lessons, and digital experiments.
+                        </p>
+                        <button class="explore-btn"
+                            onclick="document.querySelector('[data-target=chaos-manifesto]').click()">
+                            EXPLORE_WORKS <span class="arrow-symbol">→</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-right">
+                        <!-- Collage of taped works -->
+                        <div class="collage-board">
+                            <div class="collage-item polaroid-frame p1">
+                                <div class="tape-strip teal-tape top-left"></div>
+                                <img src="images/photo_restaurant.jpg" alt="Henry Le">
+                            </div>
+                            <div class="collage-item polaroid-frame p2">
+                                <div class="tape-strip red-tape top-right"></div>
+                                <img src="images/photo_earbuds.jpg" alt="Henry Le - Ideas">
+                                <span class="polaroid-label text-red">LOVE</span>
+                            </div>
+                            <div class="collage-item polaroid-frame p3">
+                                <div class="tape-strip teal-tape bottom-right"></div>
+                                <img src="images/photo_childhood.jpg" alt="Henry Le - Growth">
+                                <span class="polaroid-label text-teal">ME</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selected Archives Grid (Skills Section) -->
+                <div class="archives-intro">
+                    <span class="meta-log-tag">// PERSONAL PROFILE</span>
+                    <h2 class="archives-title">MY SKILLS // LANGUAGES &amp; STRENGTHS</h2>
+                    <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">// SPEC
+                        SHEET</span>
+                </div>
+
+                <div class="selected-grid">
+                    <!-- Skills & Languages Card -->
+                    <div class="grid-card full-width-card skills-card">
+                        <!-- Washi tape at the top center to match scrapbook feel -->
+                        <div class="tape-strip teal-tape top-center"></div>
+
+                        <div class="skills-columns-container">
+                            <!-- Left Column: Languages -->
+                            <div class="skills-col">
+                                <h3 class="skills-col-title">LANGUAGES I LEARNED</h3>
+                                <ul class="skills-list">
+                                    <li class="skills-list-item">Python</li>
+                                    <li class="skills-list-item">JavaScript</li>
+                                    <li class="skills-list-item">HTML5 &amp; CSS3</li>
+                                    <li class="skills-list-item">C++</li>
+                                    <li class="skills-list-item">SQL</li>
+                                    <li class="skills-list-item">Java</li>
+                                </ul>
+                            </div>
+
+                            <!-- Right Column: Soft Skills -->
+                            <div class="skills-col">
+                                <h3 class="skills-col-title">MY SOFT SKILLS</h3>
+                                <ul class="skills-list">
+                                    <li class="skills-list-item">Cultural Adaptability</li>
+                                    <li class="skills-list-item">Team Collaboration</li>
+                                    <li class="skills-list-item">Problem Solving &amp; Logic</li>
+                                    <li class="skills-list-item">Self-Driven Learning</li>
+                                    <li class="skills-list-item">Resilience &amp; Focus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playlist & Quote Section (replacing Philosophy section) -->
+                <div class="archives-intro">
+                    <span class="meta-log-tag">// AUDIO &amp; INSPIRATION</span>
+                    <h2 class="archives-title">MY PLAYLIST // SOUNDTRACK &amp; THOUGHTS</h2>
+                    <button class="view-all-link" onclick="alert('PLAYING MIXTAPE... BACKSTAGE RADIO ACTIVE')">BACKSTAGE
+                        RADIO 📻</button>
+                </div>
+
+                <div class="selected-grid">
+                    <!-- Grid Item 1: Mixtape Playlist (Wide Card) -->
+                    <div class="grid-card wide-card mixtape-card">
+                        <!-- Cassette Tape Container -->
+                        <div class="cassette-tape-container">
+                            <div class="tape-top-holes">
+                                <div class="tape-hole"></div>
+                                <div class="tape-hole"></div>
+                                <div class="tape-hole"></div>
+                            </div>
+
+                            <!-- Sticker Label -->
+                            <div class="tape-sticker">
+                                <div class="tape-sticker-stripes"></div>
+                                <span class="tape-sticker-title">HENRY'S MIXTAPE // VOL. 1</span>
+                                <span class="tape-sticker-artist">SELECT A TRACK TO PLAY</span>
+                            </div>
+
+                            <!-- Spindles Window -->
+                            <div class="tape-window-wrapper">
+                                <div class="tape-spindle"></div>
+                                <div class="tape-spindle"></div>
+                                <div class="tape-playing-indicator"></div>
+                            </div>
+                        </div>
+
+                         <!-- Playlist Tracks -->
+                        <div class="playlist-tracklist">
+                            <div class="track-item" data-song="Sleepwalking" data-artist="Breeze" data-spotify="https://open.spotify.com/search/Sleepwalking%20Breeze">
+                                <div class="track-name-group">
+                                    <span class="track-play-icon">▶</span>
+                                    <span>Sleepwalking <span class="track-artist">Breeze</span> <span style="color: #1ed760; font-size: 0.8rem; margin-left: 4px;">🎧</span></span>
+                                </div>
+                                <span class="track-duration">03:15</span>
+                            </div>
+                            <div class="track-item" data-song="Tell me" data-artist="CLYYO" data-spotify="https://open.spotify.com/search/Tell%20me%20CLYYO">
+                                <div class="track-name-group">
+                                    <span class="track-play-icon">▶</span>
+                                    <span>Tell me <span class="track-artist">CLYYO</span> <span style="color: #1ed760; font-size: 0.8rem; margin-left: 4px;">🎧</span></span>
+                                </div>
+                                <span class="track-duration">03:15</span>
+                            </div>
+                            <div class="track-item" data-song="Ruby Sparks" data-artist="Monet Ngo" data-spotify="https://open.spotify.com/search/Ruby%20Sparks%20Monet%20Ngo">
+                                <div class="track-name-group">
+                                    <span class="track-play-icon">▶</span>
+                                    <span>Ruby Sparks <span class="track-artist">Monet Ngo</span> <span style="color: #1ed760; font-size: 0.8rem; margin-left: 4px;">🎧</span></span>
+                                </div>
+                                <span class="track-duration">04:14</span>
+                            </div>
+                            <div class="track-item" data-song="Badtrip" data-artist="MCK" data-spotify="https://open.spotify.com/search/Badtrip%20MCK">
+                                <div class="track-name-group">
+                                    <span class="track-play-icon">▶</span>
+                                    <span>Badtrip <span class="track-artist">MCK</span> <span style="color: #1ed760; font-size: 0.8rem; margin-left: 4px;">🎧</span></span>
+                                </div>
+                                <span class="track-duration">02:38</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Item 2: Inspiration Quote Card -->
+                    <div class="grid-card quote-card tilted-right">
+                        <!-- Red coral tape strip at the top-left to hold it down -->
+                        <div class="tape-strip red-tape top-left"
+                            style="top: -12px; left: -10px; transform: rotate(-8deg);"></div>
+
+                        <div class="quote-inner">
+                            <span class="quote-mark">“</span>
+                            <p class="quote-text-body">
+                                Obstacles and hardships only appear when we're on the right path.
+                            </p>
+                            <span class="quote-credit">— HieuThuHai</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ready to Mess Things Up Banner -->
+                <div class="mess-up-banner">
+                    <div class="spark-icon s1">✦</div>
+                    <div class="spark-icon s2">✦</div>
+
+                    <h2 class="banner-heading">
+                        READY TO <span class="taped-label-red highlight-banner">BUILD TOGETHER?</span>
+                    </h2>
+                    <p class="banner-subtext">
+                        If you have an idea you want to bring to life, or just want to collaborate on a cool project, let's work together!
+                    </p>
+                    <button class="chat-block-btn"
+                        onclick="document.querySelector('[data-target=commission-contact]').click()">
+                        SAY_HELLO
+                    </button>
+                    <!-- Brand seal stamp -->
+                    <div class="brand-seal-stamp">
+                        <svg viewBox="0 0 100 100" class="seal-svg">
+                            <circle cx="50" cy="50" r="40" stroke="rgba(19, 93, 120, 0.2)" stroke-width="2" fill="none"
+                                stroke-dasharray="4 2" />
+                            <path d="M30 40 C 40 30, 60 30, 70 40 C 60 60, 40 60, 30 40 Z"
+                                fill="rgba(19, 93, 120, 0.1)" />
+                            <text x="50" y="70" font-size="8" text-anchor="middle" fill="rgba(19, 93, 120, 0.3)"
+                                font-family="monospace">V1.0_SECTOR</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 2: SESSIONS (THE CHRONICLES) -->
+            <section id="chronicles-session" class="scrapbook-section">
+                <div class="chronicles-hero-block">
+                    <span class="editorial-red-tag">STORYTIME</span>
+                    <h1 class="chronicles-title">THE_JOURNEY_</h1>
+                </div>
+
+                <div class="chronicles-split-grid">
+                    <!-- Left: Workspace Polaroid -->
+                    <div class="polaroid-frame workspace-polaroid tilted-left">
+                        <div class="tape-strip teal-tape top-left"></div>
+                        <div class="polaroid-img-box">
+                            <img src="images/photo_family_2016.jpg" alt="Family moving to the US in 2016">
+                        </div>
+                        <div class="polaroid-caption">
+                            <span class="caption-label">2016 // FAMILY</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: A New Chapter -->
+                    <div class="grid-card text-card philosophy-card">
+                        <h3 class="skill-card-title italic-serif-red">✦ New_Beginning</h3>
+                        <p class="skill-card-text">
+                            Moving from Vietnam to the United States in 2016 with my family was a major turning point.
+                            Adapting to a completely new language, culture, and environment taught me the value of
+                            resilience and curiosity.
+                            Embracing these changes opened my eyes to new possibilities, ultimately leading me to
+                            discover my passion for
+                            technology, computer science, and creative digital design.
+                        </p>
+                        <div class="philosophy-checklist">
+                            <div class="check-item">▪ FAMILY PICTURE</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Friends & Connections Section -->
+                <div class="connections-section-block">
+                    <span class="ticker-label taped-label-red">Fun Moments</span>
+                    <h2 class="connections-header-title"><u>Friends</u></h2>
+
+                    <div class="connections-grid">
+                        <!-- Friend Group 1 Polaroid -->
+                        <div class="polaroid-frame friends-polaroid-1 tilted-left">
+                            <div class="tape-strip teal-tape top-left"></div>
+                            <div class="polaroid-img-box">
+                                <img src="images/photo_friends_1.png" alt="Great times with friends">
+                            </div>
+                            <div class="polaroid-caption">
+                                <span class="caption-label">FEB 2024 // SUSHI KATSU</span>
+                            </div>
+                        </div>
+
+                        <!-- Description Card -->
+                        <div class="grid-card text-card connections-desc-card">
+                            <h3 class="skill-card-title italic-serif-red">✦ THE_SQUAD</h3>
+                            <p class="skill-card-text">
+                                Throughout my journey, I've had the privilege of meeting some of the most inspiring,
+                                creative, and supportive friends. Each friendship has added a new chapter to my story,
+                                shaping my perspective through shared experiences, laughter, and unforgettable memories.
+
+                            </p>
+                            <div class="philosophy-checklist">
+                                <div class="check-item">▪ FRIENDS PICTURE</div>
+                            </div>
+                        </div>
+
+                        <!-- Friend Group 2 Polaroid -->
+                        <div class="polaroid-frame friends-polaroid-2 tilted-right">
+                            <div class="tape-strip red-tape top-right"></div>
+                            <div class="polaroid-img-box">
+                                <img src="images/photo_friends_2.jpg" alt="Hotpot night with friends">
+                            </div>
+                            <div class="polaroid-caption">
+                                <span class="caption-label">FEB 2026 // HOTPOT GATHERING</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hoi An Journey Section -->
+                <div class="hoian-section-block">
+                    <span class="ticker-label taped-label-teal">TRAVEL_LOGS</span>
+                    <h2 class="hoian-header-title"><u>HOI AN </u></h2>
+
+                    <div class="hoian-collage-layout">
+                        <!-- Left Column: 2 Images -->
+                        <div class="hoian-col hoian-left-col">
+                            <!-- Top Left Polaroid -->
+                            <div class="polaroid-frame hoian-polaroid hoian-p1 tilted-left">
+                                <div class="tape-strip teal-tape top-left"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/hoian_street.jpg" alt="Ancient town streets of Hoi An">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label"> JAN 2026 //HOI_AN // ANCIENT STREETS</span>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Left Polaroid -->
+                            <div class="polaroid-frame hoian-polaroid hoian-p2 tilted-right">
+                                <div class="tape-strip red-tape bottom-left"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/hoian_boats.jpg" alt="Traditional boats on Hoai River">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">HOI_AN // RIVERSIDE BOATS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Column: Summary Text Card -->
+                        <div class="hoian-col hoian-center-col">
+                            <div class="grid-card text-card hoian-summary-card">
+                                <h3 class="skill-card-title italic-serif-red">✦ THE_YELLOW_CITY</h3>
+                                <p class="skill-card-text">
+                                    Hoi An is a mesmerizing ancient town in Vietnam, famous for its beautifully
+                                    preserved yellow-walled houses, narrow winding streets, and hundreds of colorful
+                                    lanterns glowing at night.
+                                </p>
+                                <p class="skill-card-text" style="margin-top: 12px;">
+                                    It a lovely place to walking around and taking picture.
+                                </p>
+                                <div class="philosophy-checklist">
+                                    <div class="check-item">▪ ANCIENT TOWN</div>
+                                    <div class="check-item">▪ LANTERN NIGHTS</div>
+                                    <div class="check-item">▪ BASKET BOATS</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: 2 Images -->
+                        <div class="hoian-col hoian-right-col">
+                            <!-- Top Right Polaroid -->
+                            <div class="polaroid-frame hoian-polaroid hoian-p3 tilted-right">
+                                <div class="tape-strip red-tape top-right"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/hoian_cafe.jpg" alt="Lantern cafe in Hoi An">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">HOI_AN // LANTERN CAFE</span>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Right Polaroid -->
+                            <div class="polaroid-frame hoian-polaroid hoian-p4 tilted-left">
+                                <div class="tape-strip teal-tape bottom-right"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/hoian_basket_boats.jpg" alt="Basket boat tour in Hoi An">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">HOI_AN // BASKET BOATS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nebraska Lake Section -->
+                <div class="lake-section-block">
+                    <span class="ticker-label taped-label-teal">ADVENTURE_LOGS</span>
+                    <h2 class="lake-header-title"><u>NEBRASKA LAKE RETREAT</u></h2>
+
+                    <div class="lake-grid-layout">
+                        <!-- Top Row: Summary + Group Photo -->
+                        <div class="lake-top-row">
+                            <!-- Left: Summary Text Card -->
+                            <div class="grid-card text-card lake-summary-card">
+                                <h3 class="skill-card-title italic-serif-red">✦ LAKE_DAYS</h3>
+                                <p class="skill-card-text">
+                                    Nothing beats a summer escape to the Nebraska lakes with the squad. Spending the day
+                                    swimming, playing frisbee in the waves, and floating on giant yellow ducks under the
+                                    open sky.
+                                </p>
+                                <p class="skill-card-text" style="margin-top: 12px;">
+                                    As the sun went down, we set up camp on the sandy shore, lit a bonfire, and spent
+                                    the night sharing stories, laughing, and roasting marshmallows under the stars.
+                                    Memorable moments of pure friendship and summer bliss.
+                                </p>
+                                <div class="philosophy-checklist">
+                                    <div class="check-item">▪ LAKE SIDE</div>
+                                    <div class="check-item">▪ WATER GAMES</div>
+                                    <div class="check-item">▪ CAMPFIRE</div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Group Polaroid -->
+                            <div class="polaroid-frame lake-polaroid lake-group-card tilted-right">
+                                <div class="tape-strip teal-tape top-center"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/lake_group.png" alt="Group of friends at Nebraska Lake">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">JUNE 2026 // THE LAKE SQUAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Collage Row: 4 polaroids with asymmetrical wiggles -->
+                        <div class="lake-bottom-collage">
+                            <!-- Frisbee -->
+                            <div class="polaroid-frame lake-polaroid lake-p1 tilted-left">
+                                <div class="tape-strip red-tape top-left"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/lake_frisbee.png" alt="Playing frisbee in the water">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">SESSION_01 // FRISBEE SHOWDOWN</span>
+                                </div>
+                            </div>
+
+                            <!-- Camp -->
+                            <div class="polaroid-frame lake-polaroid lake-p2 tilted-right">
+                                <div class="tape-strip teal-tape bottom-right"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/lake_camp.png" alt="Lake beach camp site">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">SESSION_02 // BEACH HQ</span>
+                                </div>
+                            </div>
+
+                            <!-- Swim -->
+                            <div class="polaroid-frame lake-polaroid lake-p3 tilted-left">
+                                <div class="tape-strip red-tape top-right"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/lake_swim.png" alt="Swimming in the lake">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">SESSION_03 // WATER VIBES</span>
+                                </div>
+                            </div>
+
+                            <!-- Bonfire -->
+                            <div class="polaroid-frame lake-polaroid lake-p4 tilted-right">
+                                <div class="tape-strip teal-tape top-left"></div>
+                                <div class="polaroid-img-box">
+                                    <img src="images/lake_bonfire.jpg" alt="Campfire bonfire at night">
+                                </div>
+                                <div class="polaroid-caption">
+                                    <span class="caption-label">SESSION_04 // BONFIRE NIGHTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flat Polaroid Sign-off Section -->
+                <div class="flat-polaroids-section">
+                    <div class="polaroids-row-container">
+                        <!-- Polaroid 1 -->
+                        <div class="polaroid-frame signoff-polaroid polaroid-p1 stamp-link-item">
+                            <div class="tape-strip red-tape top-left"></div>
+                            <div class="polaroid-img-box empty-placeholder">
+                                <svg class="placeholder-cross" viewBox="0 0 100 100">
+                                    <line x1="0" y1="0" x2="100" y2="100" stroke="rgba(10,10,10,0.12)"
+                                        stroke-width="1.5" stroke-dasharray="3,3" />
+                                    <line x1="100" y1="0" x2="0" y2="100" stroke="rgba(10,10,10,0.12)"
+                                        stroke-width="1.5" stroke-dasharray="3,3" />
+                                </svg>
+                            </div>
+                            <div class="polaroid-caption">
+                                <span class="caption-label font-mono">SESSION_05 // LOADING...</span>
+                            </div>
+                        </div>
+
+                        <!-- Polaroid 2 -->
+                        <div class="polaroid-frame signoff-polaroid polaroid-p2 stamp-link-item">
+                            <div class="tape-strip teal-tape bottom-right"></div>
+                            <div class="polaroid-img-box empty-placeholder">
+                                <svg class="placeholder-cross" viewBox="0 0 100 100">
+                                    <line x1="0" y1="0" x2="100" y2="100" stroke="rgba(10,10,10,0.12)"
+                                        stroke-width="1.5" stroke-dasharray="3,3" />
+                                    <line x1="100" y1="0" x2="0" y2="100" stroke="rgba(10,10,10,0.12)"
+                                        stroke-width="1.5" stroke-dasharray="3,3" />
+                                </svg>
+                            </div>
+                            <div class="polaroid-caption">
+                                <span class="caption-label font-mono">SESSION_06 // LOCKED</span>
+                            </div>
+                        </div>
+
+                        <!-- Polaroid 3 (Interactive trigger to Collab form) -->
+                        <div class="polaroid-frame signoff-polaroid polaroid-p3 stamp-link-item click-trigger"
+                            onclick="document.querySelector('[data-target=commission-contact]').click()">
+                            <div class="tape-strip red-tape top-right"></div>
+                            <div class="polaroid-img-box empty-placeholder trigger-box">
+                                <svg class="placeholder-cross" viewBox="0 0 100 100">
+                                    <line x1="0" y1="0" x2="100" y2="100" stroke="rgba(19, 93, 118, 0.2)"
+                                        stroke-width="2" stroke-dasharray="3,3" />
+                                    <line x1="100" y1="0" x2="0" y2="100" stroke="rgba(19, 93, 118, 0.2)"
+                                        stroke-width="2" stroke-dasharray="3,3" />
+                                </svg>
+                                <span class="plus-indicator">+</span>
+                            </div>
+                            <div class="polaroid-caption trigger-caption">
+                                <span class="caption-label font-mono text-teal">SESSION_07 // ADD_NEW ➔</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SCREEN 3: MANIFESTO (SELECTED CHAOS) -->
+            <section id="chaos-manifesto" class="scrapbook-section">
+                <div class="chaos-hero-block">
+                    <h1 class="chaos-title">
+                        SELECTED <span class="editorial-red-tag">CREATIONS</span> & DIGITAL EXPERIMENTS
+                    </h1>
+                </div>
+
+                <div class="under-construction-container">
+                    <div class="grid-card construction-card tilted-left">
+                        <!-- Yellow/black warning tape strips on corners -->
+                        <div class="tape-strip warning-tape" style="top: -10px; left: -25px; transform: rotate(-35deg);"></div>
+                        <div class="tape-strip warning-tape" style="bottom: -10px; right: -25px; transform: rotate(-35deg);"></div>
+                        
+                        <div class="construction-inner">
+                            <span class="warning-badge">⚠️ UNDER_CONSTRUCTION</span>
+                            <h2 class="construction-title">PROJECT VAULT IN PROGRESS</h2>
+                            <p class="construction-text">
+                                I'm currently setting up my repository indexes, compiling code samples, and linking my web development and machine learning projects here.
+                            </p>
+                            <p class="construction-text" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--primary-teal); margin-top: 8px; font-weight: bold;">
+                                ➔ Please check my <a href="https://github.com/Mangokiko" target="_blank" style="color: var(--accent-red); text-decoration: underline;">GitHub</a> for active repositories!
+                            </p>
+                            
+                            <div class="construction-doodles">
+                                <span>🚧</span>
+                                <span>💻</span>
+                                <span>☕</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREEN 4: GET IN TOUCH (COMMISSION FORM) -->
+            <section id="commission-contact" class="scrapbook-section">
+                <div class="contact-hero-block">
+                    <span class="ticker-label taped-label-red">SAY HELLO</span>
+                    <h1 class="contact-main-headline">
+                        LET'S CREATE<br><span class="editorial-red-tag large-tag">SOMETHING NEW</span>
+                    </h1>
+                </div>
+
+                <div class="contact-scrapbook-layout">
+                    <!-- Left: Form Container -->
+                    <div class="form-scrapbook-card">
+                        <div class="form-title-bar">
+                            <h3 class="form-main-heading">COMMISSION FORM</h3>
+                            <span class="form-ref-code">STATUS: ACTIVE // <span class="live-dot-green"></span></span>
+                            <!-- Small sketch stamp -->
+                            <div class="small-sketch-stamp">📁</div>
+                        </div>
+
+                        <form id="scraps-contact-form" class="scraps-form-body">
+                            <div class="scraps-form-split-row">
+                                <div class="scraps-input-row">
+                                    <label for="client-name" class="scraps-label">CLIENT_NAME</label>
+                                    <input type="text" id="client-name" name="name" class="scraps-input" placeholder="WHO ARE YOU?"
+                                        required>
+                                </div>
+                                <div class="scraps-input-row">
+                                    <label for="client-email" class="scraps-label">CONTACT_WIRE</label>
+                                    <input type="email" id="client-email" name="email" class="scraps-input"
+                                        placeholder="EMAIL@DOMAIN.COM" required>
+                                </div>
+                            </div>
+
+
+
+                            <div class="scraps-input-row">
+                                <label for="client-brief" class="scraps-label">BRIEFING_NOTES</label>
+                                <textarea id="client-brief" name="message" class="scraps-textarea" placeholder="DESCRIBE THE VISION..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="scraps-submit-btn">
+                                SEND_MESSAGE <span class="arrow-symbol">▷</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: Process & Stamps -->
+                    <div class="contact-scrapbook-aside">
+                        <!-- Retro Airmail Envelope Card -->
+                        <div class="grid-card airmail-card tilted-right">
+                            <!-- Washi tape at the top center to hold it down -->
+                            <div class="tape-strip teal-tape top-center" style="top: -10px;"></div>
+
+                            <div class="airmail-inner">
+                                <!-- Envelope Flap SVG -->
+                                <svg class="envelope-flap" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <path d="M 0 0 L 50 48 L 100 0" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Tactile Social Stamp Grid -->
+                        <div class="stamps-grid-layout">
+                            <a href="https://www.instagram.com/henri.lle/" target="_blank"
+                                class="stamp-link-item stamp-red tilted-left">
+                                <div class="stamp-icon-box">📸</div>
+                                <span class="stamp-text">INSTAGRAM</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/phuc-le-745357332/" target="_blank"
+                                class="stamp-link-item stamp-blue tilted-right">
+                                <div class="stamp-icon-box">in</div>
+                                <span class="stamp-text">LINKEDIN</span>
+                            </a>
+                            <a href="https://github.com/Mangokiko" target="_blank" class="stamp-link-item stamp-teal tilted-left">
+                                <div class="stamp-icon-box">🐙</div>
+                                <span class="stamp-text">GITHUB</span>
+                            </a>
+                        </div>
+
+                        <!-- Location Log Box -->
+                        <div class="location-log-badge">
+                            <h4 class="badge-title">LOCATION_LOG</h4>
+                            <div class="badge-line">
+                                <span class="badge-label">LOCATION:</span>
+                                <span class="badge-val text-teal">DENVER_CO</span>
+                            </div>
+                            <div class="badge-line">
+                                <span class="badge-label">STATUS:</span>
+                                <span class="badge-val text-red">OPEN_FOR_COLLAB</span>
+                            </div>
+                            <div class="badge-line">
+                                <span class="badge-label">TIMEZONE:</span>
+                                <span class="badge-val">GMT-6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Persistent Footer -->
+        <footer class="scrapbook-footer">
+            <div class="footer-left-title">
+                <h2>Henry Le</h2>
+            </div>
+            <div class="footer-right-links">
+                <div class="f-links">
+                    <a href="https://www.instagram.com/henri.lle/" target="_blank">INSTA</a>
+                    <a href="https://behance.net" target="_blank">BEHANCE</a>
+                    <a href="mailto:hello@henryle.design">EMAIL</a>
+                    <a href="#" onclick="alert('PLAYING MIXTAPE... BACKSTAGE RADIO ACTIVE')">PLAYLIST</a>
+                </div>
+                <span class="footer-copyright-text">&copy; 2026 HENRY PRODUCTIONS / ALL RIGHTS RESERVED / MADE WITH
+                    CARE</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
